@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gooning to Gifs 1.1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Gooning to Gifs</h1>
+
+    <p>Feel free to visit our other sites: <button onclick="firstEdgingProject()">First Edging Project</button> <button onclick="cumCountdown()">CUM COUNTDOWN</a></button> <button onclick="gooningToGifs()">Gooning to Gifs 1.0</a></button></p>
+  </header>
+
+  <div class="warning">
+
+    <p class="warning">This is a gooning to gifs site. It is not intended for minors or those who may find the content inappropriate.</p>
+    <p>Use at your own risk.</p>
+    <p>By using this app, you agree to the terms and conditions.</p>
+    <p>Enjoy responsibly!</p>
+    <p class="warning">This site contains futa content, if you aren't okay with this kind of content, don't worry I'm developing a new one with no futa content, and I'll be honest, neither do I like futa, I only use them because there is a lot of things I really want to see but sadly people only makes it on futa.</p>
+    <p>CC = CUM COUNTDOWN</p>
+
+    <p>Edging = Reaching the point of no return, but not cumming.</p>
+    <p>Edges = The number of times you have to edge before you can cum.</p>
+    <p>Use the timer to know when you are able to cum. Once it reaches 0 you have permission to cum.</p>
+    <p>Start CC = The button to start the cum countdown session.</p>
+    <p>Drop Rep = The button to drop a rep if you fail to edge.</p>
+    <p>Fail Set = The button to indicate that you failed the set.</p>
+
+    <p class="info">This app is a work in progress, and I am not a professional developer. If you find any bugs or have suggestions, please let me know.</p>
+    <p>Welcome to Gooning to Gifs!</p>
+    <p>This is a simple app to help you keep track of your edging sessions.</p>
+
+  </div>
+
+
+  <div class="rules">
+
+    <p class="rules">Rules:</p>
+    <ul>
+      <li>Only use this app if you are of legal age in your country.</li>
+      <li>Do not share your session with anyone else.</li>
+      <li>Respect the content and the creators of the gifs.</li>
+      <li>Have fun and enjoy your session!</li>
+      <li>Use the (How are you feeling?) button to set the amount of times you have to edge before starting the clock.</li>
+      <li>Use the (Edging) button to indicate that you have edged.</li>
+      <li>Use the (I Failed) button to indicate that you failed.</p>
+      <p>Click the button below to start your session.</p>
+    </ul>
+
+
+  </div>
+
+  <div>
+    <button onclick="startBreak()">Start CC</button>
+    <select id="feeling" onchange="setReps()">
+      <option value="">How are you feeling?</option>
+      <option value="tired">Tired</option>
+      <option value="neutral">Neutral</option>
+      <option value="good">Good</option>
+    </select>
+    <p>You have to edge: <span id="reps"></span> times.</p>
+    <button onclick="dropRep()">Edging</button>
+    <button onclick="failSet()">I Failed</button>
+  </div>
+
+  <div id="timer">00:00</div>
+  <img id="gif-display" src="images/31.gif" alt=""/>
+
+  <script src="script.js"></script>
+</body>
+</html>

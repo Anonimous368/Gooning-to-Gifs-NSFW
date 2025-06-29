@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* use center if you want it vertically centered */
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background:#111;
+  color: white;
+}
+
+header {
+  position: top;
+  width: 100%;
+  background: #222;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+#timer {
+  position: sticky;
+  top: 0;
+  background: #111;
+  z-index: 1000;
+  padding: 10px;
+    font-size: 3em;
+  margin: 1em 0;
+}
+
+#gif-display {
+  position: sticky;
+  top: 60px;
+  background: #111;
+  z-index: 999; 
+  padding: 10px;
+}
+
+
+img {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+button, select {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.rules {
+  background: #222;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  #timer {
+    font-size: 2em;
+  }
+
+  button, select {
+    width: 100%;
+    max-width: 300px;
+    font-size: 1em;
+    margin: 10px auto;
+    display: block;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+
