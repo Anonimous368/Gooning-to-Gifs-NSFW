@@ -58,6 +58,8 @@ function failSet() {
   currentReps = 0;
   document.getElementById("reps").textContent = "0";
   document.getElementById("timer").textContent = "00:00";
+  document.getElementById("gif-display").src = "images/31.gif"; // Return to default GIF
+  alert("Set failed! Take a break and reset.");
 }
 
 function firstEdgingProject() {
