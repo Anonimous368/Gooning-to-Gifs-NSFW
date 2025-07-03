@@ -50,6 +50,9 @@ function dropRep() {
     currentReps--;
     document.getElementById("reps").textContent = currentReps;
   }
+  if (currentReps === 0) {
+    window.alert("No more edges left! It is time to finish your edging session.");
+  }
 }
 
 function failSet() {
