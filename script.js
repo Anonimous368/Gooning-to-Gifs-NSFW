@@ -2,7 +2,7 @@ let timerInterval;
 let gifInterval;
 let timeLeft = 0;
 let currentReps = 0;
-const gifCount = 99; // Assuming there are 99 GIFs named 1.gif to 99.gif
+const gifCount = 102; // Assuming there are 102 GIFs named 1.gif to 102.gif
 
 function updateTimerDisplay() {
   const minutes = Math.floor(timeLeft / 60).toString().padStart(2, '0');
